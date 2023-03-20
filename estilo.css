@@ -1,0 +1,173 @@
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+	main {
+  		height: 100vh;
+  		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  	}
+
+  	* {
+		transition: all 200ms ease-in-out;
+	}
+
+
+	body {
+		font-family: sans-serif;
+		background-color: hsl(233, 47%, 7%);
+		box-sizing: border-box;
+		margin: 0;
+		padding: 15px;
+	}
+
+	.container {
+		color: black;
+		width: 1080px;
+		display: flex;
+	}
+
+	.um {
+		width: 540px;
+		height: 446px;
+		border-radius: 10px 0px 0px 10px;
+		box-sizing: border-box;
+		padding: 45px 77px 77px 77px;
+		background-color: hsl(244, 38%, 16%);
+	}
+
+	h1 {
+		font-family: "Inter", sans-serif;
+		font-weight: 700;
+		font-size: 2.2em;
+		color: white;
+	}
+
+	.stats {
+		display: inline-flex;
+		width: 100%;
+		padding-top: 40px;
+	}
+
+	.stats div {
+		width: 33%;
+		font-size: 0.8em;
+		color: hsla(0, 0%, 100%, 0.6);
+		font-family: "Lexend Deca", sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	h2 {
+		font-family: "Inter", sans-serif;
+		color: white;
+		font-size: 1.5em;
+		margin-bottom: 8px;
+		text-transform: none;
+	}
+
+	.um span {
+		color: hsl(277, 64%, 61%);
+	}
+
+	.um p {
+		font-size: 1em;
+		color: hsla(0, 0%, 100%, 0.6);
+		line-height: 26px;
+	}
+
+	.dois {
+		width: 540px;
+		height: 446px;
+		border-radius: 0px 10px 10px 0px;
+		background-image: url(img/image-header.jpg);
+
+	}
+
+	/* ------- Footer ------- */
+
+	footer {
+		font-size: 0.9em;
+		padding: 10px 0px;
+		position: fixed;
+		color: white;
+		bottom: 0px;
+		width: 100%;
+		text-align: center; 
+		background-color: hsl(233, 47%, 7%);
+	}
+
+	footer a {
+		color: hsl(277, 64%, 61%);
+		text-decoration: none;
+	}
+
+	footer a:hover {
+		color: hsla(0, 0%, 100%, 0.6);
+	}
+
+	/* ------- Mobile ------- */
+
+	@media (max-width: 1080px) {
+
+		main {
+			height: unset;
+		}
+
+		.container {
+			flex-direction: column-reverse;
+			width: 360px;
+		}
+
+		.um {
+			width: 360px;
+			text-align: center;
+			padding: 15px 31px 31px 31px;
+			border-radius: 0px 0px 10px 10px;
+			height: unset
+		}
+
+		.um p {
+			font-size: 1em;
+			margin-bottom: 0;
+		}
+
+		h1 {
+			font-size: 1.7em;
+			font-weight: 700;
+		}
+
+		h2 {
+			font-size: 1.8em;
+			font-weight: 700;
+			margin-bottom: 2px;
+		}
+
+		.dois {
+			width: 360px;
+			height: 300px;
+			border-radius: 10px 10px 0px 0px;
+			background-size: cover;
+			background-image: url(img/image-header-mobile.jpg);
+		}
+
+		.stats {
+			flex-direction: column;
+			align-content: center;
+			flex-wrap: wrap;
+			padding-top: 8px;
+			height: 200px;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
